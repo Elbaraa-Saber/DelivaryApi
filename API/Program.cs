@@ -1,7 +1,11 @@
 
 using API.DAL;
 using API.DAL.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System;
 
 namespace API
 {
@@ -19,15 +23,16 @@ namespace API
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddDbContext<ApplicationDbContext>(
-                options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+                    options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            builder.Services.AddIdentity<User, Role>(options =>
+
+            builder.Services.AddIdentityCore<User>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = false;
-                options.Password.RequireDigit = true;
                 options.Password.RequireLowercase = true;
                 options.Password.RequireUppercase = true;
-                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireDigit = true;
+                options.Password.RequireNonAlphanumeric = true;
                 options.Password.RequiredLength = 8;
             }).AddEntityFrameworkStores<ApplicationDbContext>();
 
@@ -43,6 +48,7 @@ namespace API
             {
                 Console.WriteLine(ex.Message);
             }
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
