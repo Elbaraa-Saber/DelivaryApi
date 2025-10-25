@@ -1130,6 +1130,21 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.20",
+          "Microsoft.EntityFrameworkCore": "8.0.20",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.11"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        }
       }
     }
   },
@@ -3053,10 +3068,16 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessLayer/DataAccessLayer.csproj",
+      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "DataAccessLayer >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.20",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.20",
       "Microsoft.EntityFrameworkCore >= 8.0.20",
@@ -3097,7 +3118,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\DataAccessLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

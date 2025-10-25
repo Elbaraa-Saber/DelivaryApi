@@ -1,6 +1,6 @@
 
-using API.DAL;
-using API.DAL.Models;
+using DataAccessLayer.Context;
+using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
