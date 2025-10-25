@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Common
 {
-    internal class Category
+    public enum Category
     {
+        Wok,
+        Pizza,
+        Desert,
+        Drink
     }
 }

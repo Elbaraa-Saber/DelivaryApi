@@ -9,7 +9,7 @@ namespace DataAccessLayer.Models
         public decimal Price { get; set; }
         public string Address { get; set; }
 
-        // enum Status
+        // enum Status because order can have just one status
         public Status Status { get; set; }
 
         // IBaseEntity
