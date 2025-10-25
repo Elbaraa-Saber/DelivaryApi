@@ -251,3 +251,6 @@ C:\Users\baraa\Desktop\myFiles\DelivaryApi\API\obj\Debug\net8.0\refint\API.dll
 C:\Users\baraa\Desktop\myFiles\DelivaryApi\API\obj\Debug\net8.0\API.pdb
 C:\Users\baraa\Desktop\myFiles\DelivaryApi\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\baraa\Desktop\myFiles\DelivaryApi\API\obj\Debug\net8.0\ref\API.dll
+C:\Users\baraa\Desktop\myFiles\DelivaryApi\API\obj\Debug\net8.0\API.sourcelink.json
+C:\Users\baraa\Desktop\myFiles\DelivaryApi\API\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\baraa\Desktop\myFiles\DelivaryApi\API\bin\Debug\net8.0\DataAccessLayer.pdb

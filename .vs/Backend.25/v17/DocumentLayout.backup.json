@@ -3,48 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6532918-608D-4F2D-961D-2C3CD14AC614}|WebApp\\WebApp.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6532918-608D-4F2D-961D-2C3CD14AC614}|WebApp\\WebApp.csproj|solutionrelative:webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\dataaccesslayer\\migrations\\20251022073345_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\20251022073345_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\dataaccesslayer\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\dataaccesslayer\\models\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\models\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\dataaccesslayer\\models\\dishincart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\models\\dishincart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\dataaccesslayer\\models\\ibaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\models\\ibaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\dataaccesslayer\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\dataaccesslayer\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\dataaccesslayer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62B5669A-3FAB-45D0-B3CB-45F5EEEF52E5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -53,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\api\\migrations\\20251022073345_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|solutionrelative:api\\migrations\\20251022073345_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,141 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 316,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\WebApp\\Program.cs",
-              "RelativeDocumentMoniker": "WebApp\\Program.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\WebApp\\Program.cs",
-              "RelativeToolTip": "WebApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:38:38.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "DataAccessLayer\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAgwAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:26:31.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20251022073345_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Migrations\\20251022073345_InitialCreate.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20251022073345_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Migrations\\20251022073345_InitialCreate.cs",
-              "RelativeToolTip": "DataAccessLayer\\Migrations\\20251022073345_InitialCreate.cs",
-              "ViewState": "AgIAAAYBAAAAAAAAAAAmwBkBAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:26:25.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\User.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\User.cs",
-              "RelativeToolTip": "DataAccessLayer\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:25:17.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Rating.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\Rating.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Models\\Rating.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\Rating.cs",
-              "RelativeToolTip": "DataAccessLayer\\Models\\Rating.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:25:12.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\Order.cs",
-              "RelativeToolTip": "DataAccessLayer\\Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:25:08.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IBaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\IBaseEntity.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Models\\IBaseEntity.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\IBaseEntity.cs",
-              "RelativeToolTip": "DataAccessLayer\\Models\\IBaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:25:02.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DishInCart.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\DishInCart.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Models\\DishInCart.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\DishInCart.cs",
-              "RelativeToolTip": "DataAccessLayer\\Models\\DishInCart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:24:56.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Dish.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\Dish.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Models\\Dish.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\Dish.cs",
-              "RelativeToolTip": "DataAccessLayer\\Models\\Dish.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:20:02.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "RelativeToolTip": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T18:20:08.349Z",
+              "WhenOpened": "2025-10-25T19:27:08.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\Program.cs*",
+              "RelativeToolTip": "API\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T03:59:10.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\appsettings.json",
               "RelativeDocumentMoniker": "API\\appsettings.json",
@@ -213,20 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\Program.cs",
-              "RelativeDocumentMoniker": "API\\Program.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\Program.cs",
-              "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T03:59:10.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "API\\appsettings.Development.json",
@@ -235,19 +78,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-09-15T04:32:16.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20251022073345_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\Migrations\\20251022073345_InitialCreate.cs",
-              "RelativeDocumentMoniker": "API\\Migrations\\20251022073345_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\Migrations\\20251022073345_InitialCreate.cs",
-              "RelativeToolTip": "API\\Migrations\\20251022073345_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T07:33:45.443Z",
               "EditorCaption": ""
             }
           ]
