@@ -15,6 +15,7 @@ namespace DataAccessLayer.Context
         public DbSet<DishInCart> DishInCarts { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Rating> Ratings { get; set; }
+        public DbSet<DishCategory> DishCategories { get; set; } // أضف هذا
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -63,10 +64,14 @@ namespace DataAccessLayer.Context
                 .HasForeignKey(d => d.OrderId)
                 .OnDelete(DeleteBehavior.SetNull);
 
-            // ===== Dish Category (Enum as int) =====
-            modelBuilder.Entity<Dish>()
-                .Property(d => d.Category)
-                .HasConversion<int>();
+            // ===== Dish ↔ Category (Many-to-Many via DishCategory) =====
+            modelBuilder.Entity<DishCategory>()
+                .HasKey(dc => new { dc.DishId, dc.Category });
+
+            modelBuilder.Entity<DishCategory>()
+                .HasOne(dc => dc.Dish)
+                .WithMany(d => d.DishCategories)
+                .HasForeignKey(dc => dc.DishId);
 
             // ===== Order Status (Enum as int) =====
             modelBuilder.Entity<Order>()
