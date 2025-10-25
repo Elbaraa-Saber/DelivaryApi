@@ -2,3 +2,6 @@
 .vs/
 bin/
 obj/
+.vs/Backend.25/v17/.suo
+API/obj/Debug/net8.0/API.AssemblyInfo.cs
+API/obj/Debug/net8.0/API.AssemblyInfoInputs.cache
