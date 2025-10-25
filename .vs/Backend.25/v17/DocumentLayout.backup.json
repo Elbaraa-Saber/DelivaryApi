@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Migrations\\20251025192813_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Migrations\\20251025192813_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55DF0B76-2F48-4605-8B70-F8AE4D204FF8}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 316,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "20251025192813_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Migrations\\20251025192813_Initial.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20251025192813_Initial.cs",
+              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Migrations\\20251025192813_Initial.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20251025192813_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T19:28:14.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
@@ -43,12 +60,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\Program.cs*",
-              "RelativeToolTip": "API\\Program.cs*",
+              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T03:59:10.997Z",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\appsettings.json",
               "RelativeDocumentMoniker": "API\\appsettings.json",
@@ -69,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "API\\appsettings.Development.json",

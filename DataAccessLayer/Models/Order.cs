@@ -1,4 +1,5 @@
-﻿namespace DataAccessLayer.Models
+﻿using DataAccessLayer.Common;
+namespace DataAccessLayer.Models
 {
     public class Order: IBaseEntity
     {
@@ -20,10 +21,5 @@
         public Guid UserId { get; set; }
         public User User { get; set; }
         public ICollection<DishInCart> DishInCarts { get; set; } = new List<DishInCart>();
-    }
-    public enum Status
-    {
-        InProcess,
-        Delivered
     }
 }

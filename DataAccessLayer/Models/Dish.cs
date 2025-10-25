@@ -1,4 +1,6 @@
-﻿namespace DataAccessLayer.Models
+﻿using DataAccessLayer.Common;
+
+namespace DataAccessLayer.Models
 {
     public class Dish : IBaseEntity
     {
@@ -21,12 +23,5 @@
         public ICollection<Rating> Ratings { get; set; } = new List<Rating>();
         public ICollection<DishInCart> DishInCarts { get; set; } = new List<DishInCart>();
 
-    }
-    public enum Category
-    {
-        Wok,
-        Pizza,
-        Desert,
-        Drink
     }
 }
