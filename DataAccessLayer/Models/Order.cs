@@ -5,7 +5,7 @@ namespace DataAccessLayer.Models
     {
         public Guid Id { get; set; }
         public DateTime OrderTime {  get; set; }
-        public DateTime DeliveryTime{ get; set; }
+        public DateTime? DeliveryTime { get; set; }
         public decimal Price { get; set; }
         public string Address { get; set; }
 

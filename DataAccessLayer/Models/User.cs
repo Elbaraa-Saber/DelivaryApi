@@ -9,7 +9,7 @@ namespace DataAccessLayer.Models
         public string Address { get; set; }
 
         // from IBaseEntity
-        public Guid Id { get; set; } // تأكد أن هذا لا يتعارض مع IdentityUser<Guid> (هو عنده Id بالفعل من النوع Guid)
+        public Guid Id { get; set; } 
         public DateTime CreateDateTime { get; set; }
         public DateTime ModifyDateTime { get; set; }
         public DateTime? DeleteDateTime { get; set; }

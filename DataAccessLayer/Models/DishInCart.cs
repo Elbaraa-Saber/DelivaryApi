@@ -3,7 +3,7 @@
     public class DishInCart : IBaseEntity
     {
         public Guid Id { get; set; }
-        public int Count { get; set; }
+        public int Count { get; set; } = 1;
 
         // IBaseEntity
         public DateTime CreateDateTime { get; set; }
