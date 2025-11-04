@@ -1,4 +1,4 @@
-﻿using BusinessLogicLayer.DTOs;
+﻿using BusinessLogicLayer.DTOs.Dish;
 using BusinessLogicLayer.Services;
 using Microsoft.AspNetCore.Mvc;
 

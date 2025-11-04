@@ -1,6 +1,6 @@
 ﻿using DataAccessLayer.Common;
 
-namespace BusinessLogicLayer.DTOs
+namespace BusinessLogicLayer.DTOs.Dish
 {
     public class DishDetailsDto : DishListItemDto
     {

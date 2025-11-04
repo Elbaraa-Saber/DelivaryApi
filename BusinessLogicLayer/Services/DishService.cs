@@ -1,15 +1,12 @@
-﻿using BusinessLogicLayer.DTOs;
+﻿using BusinessLogicLayer.DTOs.Common;
+using BusinessLogicLayer.DTOs.Dish;
+using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Common;
 using DataAccessLayer.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogicLayer.Services
 {
-    public interface IDishService
-    {
-        Task<PagedResult<DishListItemDto>> GetDishesAsync(DishQueryParamsDto query);
-        Task<DishDetailsDto> GetDishDetailsAsync(Guid id);
-    }
 
     public class DishService : IDishService
     {

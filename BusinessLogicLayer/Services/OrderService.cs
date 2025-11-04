@@ -1,14 +1,13 @@
-﻿using BusinessLogicLayer.DTOs;
+﻿using BusinessLogicLayer.DTOs.Common;
+using BusinessLogicLayer.DTOs.Order;
+using BusinessLogicLayer.DTOs.Dish;
 using DataAccessLayer.Context;
 using Microsoft.EntityFrameworkCore;
+using BusinessLogicLayer.Interfaces;
+
 
 namespace BusinessLogicLayer.Services
 {
-    public interface IOrderService
-    {
-        Task<PagedResult<OrderListItemDto>> GetOrdersAsync(OrderQueryParamsDto query);
-        Task<OrderDetailsDto> GetOrderDetailsAsync(Guid id);
-    }
 
     public class OrderService : IOrderService
     {
