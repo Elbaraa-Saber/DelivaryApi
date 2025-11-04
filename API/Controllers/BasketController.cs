@@ -1,8 +1,11 @@
 ﻿using BusinessLogicLayer.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace API.Controllers
 {
+    [Authorize] 
     [ApiController]
     [Route("api/[controller]")]
     public class BasketController : ControllerBase
@@ -14,8 +17,7 @@ namespace API.Controllers
             _cartService = cartService;
         }
 
-        // مؤقتًا — حتى نضيف نظام المستخدمين (JWT)
-        private Guid CurrentUserId => Guid.Parse("11111111-1111-1111-1111-111111111111");
+        private Guid CurrentUserId => Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
         [HttpGet]
         public async Task<IActionResult> GetUserCart()
@@ -28,14 +30,14 @@ namespace API.Controllers
         public async Task<IActionResult> AddDishToCart(Guid dishId)
         {
             await _cartService.AddDishToCartAsync(CurrentUserId, dishId);
-            return Ok(new { message = "Dish added to cart." });
+            return Ok(new { message = "Dish added to your cart." });
         }
 
         [HttpDelete("dish/{dishId}")]
         public async Task<IActionResult> RemoveDishFromCart(Guid dishId, [FromQuery] bool decreaseOnly = false)
         {
             await _cartService.RemoveDishFromCartAsync(CurrentUserId, dishId, decreaseOnly);
-            return Ok(new { message = "Dish removed or decreased." });
+            return Ok(new { message = "Dish removed or decreased from your cart." });
         }
     }
 }

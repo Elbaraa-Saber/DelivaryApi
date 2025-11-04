@@ -75,9 +75,9 @@ namespace API
                 options.Password.RequiredLength = 8;
             })
             .AddEntityFrameworkStores<ApplicationDbContext>()
-            .AddSignInManager<SignInManager<User>>(); // مهم لتسجيل الدخول
+            .AddSignInManager<SignInManager<User>>(); 
 
-            // إعداد JWT Authentication
+            // JWT Authentication
             var jwtSettings = builder.Configuration.GetSection("Jwt");
             var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
 
@@ -102,7 +102,6 @@ namespace API
 
             builder.Services.AddAuthorization();
 
-            // الآن نُكمل بناء التطبيق
             var app = builder.Build();
 
             // Database initialization
@@ -128,7 +127,7 @@ namespace API
 
             app.UseHttpsRedirection();
 
-            app.UseAuthentication(); //  يجب أن يأتي قبل Authorization
+            app.UseAuthentication(); 
             app.UseAuthorization();
 
             app.MapControllers();
