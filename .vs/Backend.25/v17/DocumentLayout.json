@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8801CCD6-E1BE-4777-B5DA-42BBE8D833B4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\businesslogiclayer\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8801CCD6-E1BE-4777-B5DA-42BBE8D833B4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8801CCD6-E1BE-4777-B5DA-42BBE8D833B4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\businesslogiclayer\\services\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8801CCD6-E1BE-4777-B5DA-42BBE8D833B4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8801CCD6-E1BE-4777-B5DA-42BBE8D833B4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\baraa\\desktop\\myfiles\\delivaryapi\\businesslogiclayer\\dtos\\dishdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8801CCD6-E1BE-4777-B5DA-42BBE8D833B4}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\dtos\\dishdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -94,37 +86,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 316,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\OrderService.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\Services\\OrderService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\OrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T13:36:53.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DishService.cs",
-              "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\Services\\DishService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\DishService.cs",
-              "ToolTip": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\Services\\DishService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\DishService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T13:36:33.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "DishQueryParamsDto.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\DTOs\\DishQueryParamsDto.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTOs\\DishQueryParamsDto.cs",
@@ -137,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "DishListItemDto.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\DTOs\\DishListItemDto.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTOs\\DishListItemDto.cs",
@@ -150,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "DishDetailsDto.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\DTOs\\DishDetailsDto.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTOs\\DishDetailsDto.cs",
@@ -163,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "OrderDetailsDto.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\DTOs\\OrderDetailsDto.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTOs\\OrderDetailsDto.cs",
@@ -176,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "OrderListItemDto.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\DTOs\\OrderListItemDto.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTOs\\OrderListItemDto.cs",
@@ -189,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "OrderQueryParamsDto.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\DTOs\\OrderQueryParamsDto.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTOs\\OrderQueryParamsDto.cs",
@@ -202,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "PagedResult.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\BusinessLogicLayer\\DTOs\\PagedResult.cs",
               "RelativeDocumentMoniker": "BusinessLogicLayer\\DTOs\\PagedResult.cs",
@@ -215,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\Order.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Models\\Order.cs",
@@ -227,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\User.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Models\\User.cs",
@@ -240,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "Rating.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\Rating.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Models\\Rating.cs",
@@ -252,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "IBaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\IBaseEntity.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Models\\IBaseEntity.cs",
@@ -264,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "DishInCart.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\DishInCart.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Models\\DishInCart.cs",
@@ -276,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Context\\ApplicationDbContext.cs",
@@ -288,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "DishCategory.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\DishCategory.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Models\\DishCategory.cs",
@@ -300,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "Dish.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Models\\Dish.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Models\\Dish.cs",
@@ -312,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Common\\Status.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Common\\Status.cs",
@@ -324,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Common\\Category.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Common\\Category.cs",
@@ -336,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "20251025213452_Initial2.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Migrations\\20251025213452_Initial2.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20251025213452_Initial2.cs",
@@ -348,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "20251025212857_DishCategoryAdded.cs",
               "DocumentMoniker": "C:\\Users\\baraa\\Desktop\\myFiles\\DelivaryApi\\DataAccessLayer\\Migrations\\20251025212857_DishCategoryAdded.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20251025212857_DishCategoryAdded.cs",
