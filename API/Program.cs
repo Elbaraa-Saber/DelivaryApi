@@ -46,6 +46,8 @@ namespace API
                 using var serviceScope = app.Services.CreateScope();
                 var context = serviceScope.ServiceProvider.GetService<ApplicationDbContext>();
                 context.Database.Migrate();
+
+                DataAccessLayer.DbInitializer.Seed(context);
             }
             catch (Exception ex)
             {
