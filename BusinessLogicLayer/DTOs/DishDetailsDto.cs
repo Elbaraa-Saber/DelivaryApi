@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataAccessLayer.Common;
 
 namespace BusinessLogicLayer.DTOs
 {
-    internal class DishDetailsDto
+    public class DishDetailsDto : DishListItemDto
     {
+        public string Description { get; set; }
+        public bool IsVegetarian { get; set; }
+        public double AverageRating { get; set; }
     }
 }

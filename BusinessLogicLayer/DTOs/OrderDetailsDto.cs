@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataAccessLayer.Common;
 
 namespace BusinessLogicLayer.DTOs
 {
-    internal class OrderDetailsDto
+    public class OrderDetailsDto : OrderListItemDto
     {
+        public DateTime DeliveryTime { get; set; }
+        public List<DishListItemDto> Dishes { get; set; } = new();
     }
 }
