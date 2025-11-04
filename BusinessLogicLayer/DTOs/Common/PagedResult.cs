@@ -1,4 +1,4 @@
-﻿namespace BusinessLogicLayer.DTOs
+﻿namespace BusinessLogicLayer.DTOs.Common
 {
     public class PagedResult<T>
     {

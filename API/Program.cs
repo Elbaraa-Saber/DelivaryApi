@@ -1,4 +1,5 @@
 
+using BusinessLogicLayer.Interfaces;
 using BusinessLogicLayer.Services;
 using DataAccessLayer.Context;
 using DataAccessLayer.Models;
@@ -28,6 +29,7 @@ namespace API
 
             builder.Services.AddScoped<IDishService, DishService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
+            builder.Services.AddScoped<ICartService, CartService>();
 
             builder.Services.AddIdentityCore<User>(options =>
             {

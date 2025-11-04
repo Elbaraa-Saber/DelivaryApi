@@ -1,6 +1,7 @@
-﻿using DataAccessLayer.Common;
+﻿using BusinessLogicLayer.DTOs.Dish;
+using DataAccessLayer.Common;
 
-namespace BusinessLogicLayer.DTOs
+namespace BusinessLogicLayer.DTOs.Order
 {
     public class OrderDetailsDto : OrderListItemDto
     {
