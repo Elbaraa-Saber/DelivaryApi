@@ -1,10 +1,11 @@
 
+using BusinessLogicLayer.Services;
 using DataAccessLayer.Context;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System;
 
 namespace API
@@ -25,6 +26,8 @@ namespace API
             builder.Services.AddDbContext<ApplicationDbContext>(
                     options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+            builder.Services.AddScoped<IDishService, DishService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
 
             builder.Services.AddIdentityCore<User>(options =>
             {
