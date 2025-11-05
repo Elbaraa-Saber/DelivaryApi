@@ -1,9 +1,11 @@
 ﻿using BusinessLogicLayer.DTOs.Common;
-using BusinessLogicLayer.DTOs.Order;
 using BusinessLogicLayer.DTOs.Dish;
-using DataAccessLayer.Context;
-using Microsoft.EntityFrameworkCore;
+using BusinessLogicLayer.DTOs.Order;
 using BusinessLogicLayer.Interfaces;
+using DataAccessLayer.Common;
+using DataAccessLayer.Context;
+using DataAccessLayer.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace BusinessLogicLayer.Services
@@ -79,6 +81,54 @@ namespace BusinessLogicLayer.Services
                     Photo = dic.Dish.Photo
                 }).ToList()
             };
+        }
+
+        public async Task<Guid> CreateOrderFromCartAsync(Guid userId, string address)
+        {
+            var cartItems = await _context.DishInCarts
+                .Include(c => c.Dish)
+                .Where(c => c.UserId == userId && c.OrderId == null)
+                .ToListAsync();
+
+            if (!cartItems.Any())
+                throw new Exception("Basket is empty");
+
+            var totalPrice = cartItems.Sum(c => c.Dish.Price * c.Count);
+
+            var order = new Order
+            {
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                OrderTime = DateTime.UtcNow,
+                DeliveryTime = DateTime.UtcNow.AddHours(1),
+                Price = totalPrice,
+                Address = address,
+                Status = Status.InProcess,
+                CreateDateTime = DateTime.UtcNow,
+                ModifyDateTime = DateTime.UtcNow
+            };
+
+            await _context.Orders.AddAsync(order);
+
+            foreach (var item in cartItems)
+            {
+                item.OrderId = order.Id;
+                _context.DishInCarts.Update(item);
+            }
+
+            await _context.SaveChangesAsync();
+            return order.Id;
+        }
+
+        public async Task ConfirmOrderDeliveryAsync(Guid orderId, Guid userId)
+        {
+            var order = await _context.Orders.FirstOrDefaultAsync(o => o.Id == orderId && o.UserId == userId);
+            if (order == null)
+                throw new Exception("Order not found");
+
+            order.Status = Status.Delivered;
+            order.ModifyDateTime = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
         }
     }
 }

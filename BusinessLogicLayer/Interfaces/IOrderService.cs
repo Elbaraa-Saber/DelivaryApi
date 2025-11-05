@@ -7,5 +7,8 @@ namespace BusinessLogicLayer.Interfaces
     {
         Task<PagedResult<OrderListItemDto>> GetOrdersAsync(OrderQueryParamsDto query);
         Task<OrderDetailsDto> GetOrderDetailsAsync(Guid id);
+
+        Task<Guid> CreateOrderFromCartAsync(Guid userId, string address);
+        Task ConfirmOrderDeliveryAsync(Guid orderId, Guid userId);
     }
 }

@@ -9,5 +9,6 @@ namespace BusinessLogicLayer.DTOs.Dish
         public List<Category>? Categories { get; set; }
         public string? Search { get; set; }
         public bool? IsVegetarian { get; set; }
+        public string Sorting { get; internal set; }
     }
 }

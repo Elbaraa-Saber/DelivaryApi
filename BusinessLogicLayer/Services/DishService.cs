@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BusinessLogicLayer.Services
 {
-
     public class DishService : IDishService
     {
         private readonly ApplicationDbContext _context;
@@ -17,30 +16,37 @@ namespace BusinessLogicLayer.Services
             _context = context;
         }
 
-        public async Task<PagedResult<DishListItemDto>> GetDishesAsync(DishQueryParamsDto query)
+        public async Task<DishListResponseDto> GetDishesAsync(DishQueryParamsDto query)
         {
             var dishes = _context.Dishes
                 .Include(d => d.DishCategories)
+                .Include(d => d.Ratings)
                 .AsQueryable();
 
+            // تصفية حسب التصنيف
             if (query.Categories != null && query.Categories.Any())
             {
                 dishes = dishes.Where(d =>
                     d.DishCategories.Any(dc => query.Categories.Contains(dc.Category)));
             }
 
-            if (!string.IsNullOrEmpty(query.Search))
-            {
-                dishes = dishes.Where(d => d.Name.ToLower().Contains(query.Search.ToLower()));
-            }
-
+            // تصفية نباتي
             if (query.IsVegetarian.HasValue)
-            {
                 dishes = dishes.Where(d => d.IsVegetarian == query.IsVegetarian.Value);
+
+            // الترتيب
+            switch (query.Sorting)
+            {
+                case "NameAsc": dishes = dishes.OrderBy(d => d.Name); break;
+                case "NameDesc": dishes = dishes.OrderByDescending(d => d.Name); break;
+                case "PriceAsc": dishes = dishes.OrderBy(d => d.Price); break;
+                case "PriceDesc": dishes = dishes.OrderByDescending(d => d.Price); break;
+                case "RatingAsc": dishes = dishes.OrderBy(d => d.Ratings.Any() ? d.Ratings.Average(r => r.Value) : 0); break;
+                case "RatingDesc": dishes = dishes.OrderByDescending(d => d.Ratings.Any() ? d.Ratings.Average(r => r.Value) : 0); break;
+                default: dishes = dishes.OrderBy(d => d.Name); break;
             }
 
             var total = await dishes.CountAsync();
-
             var items = await dishes
                 .Skip((query.Page - 1) * query.PageSize)
                 .Take(query.PageSize)
@@ -48,18 +54,24 @@ namespace BusinessLogicLayer.Services
                 {
                     Id = d.Id,
                     Name = d.Name,
+                    Description = d.Description,
                     Price = d.Price,
                     Photo = d.Photo,
+                    IsVegetarian = d.IsVegetarian,
+                    AverageRating = d.Ratings.Any() ? d.Ratings.Average(r => r.Value) : 0,
                     Categories = d.DishCategories.Select(dc => dc.Category).ToList()
                 })
                 .ToListAsync();
 
-            return new PagedResult<DishListItemDto>
+            return new DishListResponseDto
             {
-                Items = items,
-                TotalCount = total,
-                CurrentPage = query.Page,
-                PageSize = query.PageSize
+                Dishes = items,
+                Pagination = new PaginationDto
+                {
+                    Size = query.PageSize,
+                    Count = total,
+                    Current = query.Page
+                }
             };
         }
 
@@ -77,12 +89,12 @@ namespace BusinessLogicLayer.Services
             {
                 Id = dish.Id,
                 Name = dish.Name,
-                Price = dish.Price,
                 Description = dish.Description,
-                IsVegetarian = dish.IsVegetarian,
+                Price = dish.Price,
                 Photo = dish.Photo,
-                Categories = dish.DishCategories.Select(dc => dc.Category).ToList(),
-                AverageRating = dish.Ratings.Any() ? dish.Ratings.Average(r => r.Value) : 0
+                IsVegetarian = dish.IsVegetarian,
+                AverageRating = dish.Ratings.Any() ? dish.Ratings.Average(r => r.Value) : 0,
+                Categories = dish.DishCategories.Select(dc => dc.Category).ToList()
             };
         }
     }
