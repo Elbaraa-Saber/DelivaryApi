@@ -62,7 +62,9 @@ namespace API
             builder.Services.AddScoped<IDishService, DishService>();
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<ICartService, CartService>();
-            builder.Services.AddScoped<IAuthService, AuthService>(); 
+            builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IRatingService, RatingService>();
+
 
             // Identity
             builder.Services.AddIdentityCore<User>(options =>
