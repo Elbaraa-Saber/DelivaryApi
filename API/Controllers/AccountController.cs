@@ -1,59 +1,142 @@
 ﻿using BusinessLogicLayer.DTOs.User;
 using BusinessLogicLayer.Interfaces;
+using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace API.Controllers
+[ApiController]
+[Route("api/[controller]")]
+[Produces("application/json")]
+public class AccountController : ControllerBase
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class AccountController : ControllerBase
+    private readonly IAuthService _authService;
+
+    public AccountController(IAuthService authService)
     {
-        private readonly IAuthService _authService;
+        _authService = authService;
+    }
 
-        public AccountController(IAuthService authService)
+    [HttpPost("register")]
+    [ProducesResponseType(typeof(TokenResponseDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> Register([FromBody] UserRegisterDto dto)
+    {
+        try
         {
-            _authService = authService;
+            var token = await _authService.RegisterAsync(dto);
+            return Ok(token);
         }
-
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] UserRegisterDto dto)
+        catch (Exception ex)
         {
-            await _authService.RegisterAsync(dto);
-            return Ok(new { message = "User registered successfully" });
+            return StatusCode(StatusCodes.Status500InternalServerError,
+                new GenericResponseDto
+                {
+                    Status = "Error",
+                    Message = ex.Message
+                });
         }
+    }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] UserLoginDto dto)
+
+    [HttpPost("login")]
+    [ProducesResponseType(typeof(TokenResponseDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> Login([FromBody] UserLoginDto dto)
+    {
+        try
         {
             var token = await _authService.LoginAsync(dto);
             return Ok(token);
         }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError,
+                new GenericResponseDto
+                {
+                    Status = "Error",
+                    Message = ex.Message
+                });
+        }
+    }
 
-        [Authorize]
-        [HttpGet("profile")]
-        public async Task<IActionResult> GetProfile()
+    [Authorize]
+    [HttpPost("logout")]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status403Forbidden)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status500InternalServerError)]
+
+    public IActionResult Logout()
+    {
+        try
+        {
+            return Ok(new GenericResponseDto
+            {
+                Status = "Success",
+                Message = "User logged out successfully"
+            });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, new GenericResponseDto
+            {
+                Status = "Error",
+                Message = ex.Message
+            });
+        }
+    }
+
+    [Authorize]
+    [HttpGet("profile")]
+    [ProducesResponseType(typeof(UserProfileDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status403Forbidden)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> GetProfile()
+    {
+        try
         {
             var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             var profile = await _authService.GetProfileAsync(userId);
             return Ok(profile);
         }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, new GenericResponseDto
+            {
+                Status = "Error",
+                Message = ex.Message
+            });
+        }
+    }
 
-        [Authorize]
-        [HttpPut("profile")]
-        public async Task<IActionResult> EditProfile([FromBody] UserProfileEditDto dto)
+    [Authorize]
+    [HttpPut("profile")]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status403Forbidden)]
+    [ProducesResponseType(typeof(GenericResponseDto), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> EditProfile([FromBody] UserProfileEditDto dto)
+    {
+        try
         {
             var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             await _authService.EditProfileAsync(userId, dto);
-            return Ok(new { message = "Profile updated successfully" });
-        }
 
-        [Authorize]
-        [HttpPost("logout")]
-        public IActionResult Logout()
+            return Ok();
+        }
+        catch (Exception ex)
         {
-            return Ok(new { message = "User logged out successfully" });
+            return StatusCode(StatusCodes.Status500InternalServerError, new GenericResponseDto
+            {
+                Status = "Error",
+                Message = ex.Message
+            });
         }
     }
 }

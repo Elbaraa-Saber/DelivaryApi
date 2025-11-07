@@ -22,7 +22,7 @@ namespace BusinessLogicLayer.Services
             _config = config;
         }
 
-        public async Task RegisterAsync(UserRegisterDto dto)
+        public async Task<TokenResponseDto> RegisterAsync(UserRegisterDto dto)
         {
             var user = new User
             {
@@ -31,14 +31,21 @@ namespace BusinessLogicLayer.Services
                 Email = dto.Email,
                 Address = dto.Address,
                 BirthDate = dto.BirthDate,
+                Gender = dto.Gender,
+                PhoneNumber = dto.PhoneNumber,
                 CreateDateTime = DateTime.UtcNow,
                 ModifyDateTime = DateTime.UtcNow
             };
 
             var result = await _userManager.CreateAsync(user, dto.Password);
-
             if (!result.Succeeded)
                 throw new Exception(string.Join(", ", result.Errors.Select(e => e.Description)));
+
+            return await LoginAsync(new UserLoginDto
+            {
+                Email = dto.Email,
+                Password = dto.Password
+            });
         }
 
         public async Task<TokenResponseDto> LoginAsync(UserLoginDto dto)
@@ -69,7 +76,6 @@ namespace BusinessLogicLayer.Services
             return new TokenResponseDto
             {
                 Token = new JwtSecurityTokenHandler().WriteToken(token),
-                Expiration = token.ValidTo
             };
         }
 
@@ -85,9 +91,12 @@ namespace BusinessLogicLayer.Services
                 FullName = user.FullName,
                 Email = user.Email,
                 Address = user.Address,
-                BirthDate = user.BirthDate
+                BirthDate = user.BirthDate,
+                Gender = user.Gender,
+                PhoneNumber = user.PhoneNumber
             };
         }
+
 
         public async Task EditProfileAsync(Guid userId, UserProfileEditDto dto)
         {
@@ -96,13 +105,15 @@ namespace BusinessLogicLayer.Services
                 throw new Exception("User not found");
 
             user.FullName = dto.FullName;
-            user.Address = dto.Address;
             user.BirthDate = dto.BirthDate;
+            user.Address = dto.Address;
+            user.PhoneNumber = dto.PhoneNumber;
             user.ModifyDateTime = DateTime.UtcNow;
 
             var result = await _userManager.UpdateAsync(user);
             if (!result.Succeeded)
                 throw new Exception(string.Join(", ", result.Errors.Select(e => e.Description)));
         }
+
     }
 }
