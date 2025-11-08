@@ -4,10 +4,13 @@ using DataAccessLayer.Context;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace API
 {
@@ -39,20 +42,20 @@ namespace API
                 });
 
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
-            });
+                    {
+                        {
+                            new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "Bearer"
+                                }
+                            },
+                            Array.Empty<string>()
+                        }
+                    });
+                 });
 
             // Database
             builder.Services.AddDbContext<ApplicationDbContext>(
@@ -64,7 +67,10 @@ namespace API
             builder.Services.AddScoped<ICartService, CartService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IRatingService, RatingService>();
-
+            builder.Services.AddControllers().AddJsonOptions(o =>
+            {
+                o.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            });
 
             // Identity
             builder.Services.AddIdentityCore<User>(options =>
@@ -103,6 +109,10 @@ namespace API
             });
 
             builder.Services.AddAuthorization();
+            builder.Services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressMapClientErrors = true;
+            });
 
             var app = builder.Build();
 
