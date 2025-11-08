@@ -1,14 +1,21 @@
-﻿using DataAccessLayer.Common;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using DataAccessLayer.Common;
 
 namespace BusinessLogicLayer.DTOs.Dish
 {
     public class DishQueryParamsDto
     {
-        public int Page { get; set; } = 1;
-        public int PageSize { get; set; } = 10;
         public List<Category>? Categories { get; set; }
-        public string? Search { get; set; }
-        public bool? IsVegetarian { get; set; }
-        public string Sorting { get; internal set; }
+
+        [DefaultValue(false)]
+        public bool Vegetarian { get; set; } = false;
+
+        [DefaultValue(DishSorting.NameAsc)]
+        public DishSorting? Sorting { get; set; } = DishSorting.NameAsc;
+
+        [DefaultValue(1)]
+        [Range(1, int.MaxValue)]
+        public int Page { get; set; } = 1;
     }
 }

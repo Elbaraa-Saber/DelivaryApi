@@ -2,10 +2,15 @@
 
 namespace BusinessLogicLayer.DTOs.Dish
 {
-    public class DishDetailsDto : DishListItemDto
+    public class DishDetailsDto
     {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
         public string Description { get; set; }
-        public bool IsVegetarian { get; set; }
-        public double AverageRating { get; set; }
+        public decimal Price { get; set; }
+        public string Image { get; set; }        
+        public bool Vegetarian { get; set; }      
+        public double Rating { get; set; }       
+        public Category Category { get; set; }   
     }
 }
